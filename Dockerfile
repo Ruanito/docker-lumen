@@ -13,4 +13,9 @@ RUN chown -R apache:apache /app/public_html
 
 COPY conf.d/dev.conf /etc/httpd/conf.d/dev.conf
 
+COPY scripts/composer.sh composer.sh
+RUN chmod 777 composer.sh
+
+RUN /bin/bash -c "source /composer.sh"
+
 CMD ["/usr/sbin/httpd", "-DFOREGROUND"]
