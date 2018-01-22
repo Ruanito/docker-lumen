@@ -1,0 +1,9 @@
+version: '3'
+services:
+  lumen:
+    build: .
+    container_name: 'lumencentos'
+    ports:
+     - "8000:80"
+    volumes:
+      - ~/Documents/app:/app/public_html
