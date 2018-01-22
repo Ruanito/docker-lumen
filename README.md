@@ -2,7 +2,7 @@
 
 Run the develoment environment for Lumen framework
 
-Based on the official Docker images:
+Based on the official documentation:
 
 * [lumen](https://lumen.laravel.com)
 
