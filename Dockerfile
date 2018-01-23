@@ -8,8 +8,8 @@ RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
 RUN yum -y install httpd && \
 	yum -y install php70w php70w-fpm.x86_64
 
-RUN mkdir -p /app/public_html
-RUN chown -R apache:apache /app/public_html
+RUN mkdir -p /app
+RUN chown -R apache:apache /app
 
 COPY conf.d/dev.conf /etc/httpd/conf.d/dev.conf
 
