@@ -6,4 +6,4 @@ services:
     ports:
      - "8000:80"
     volumes:
-      - ~/Documents/Dev/dokcer-code:/app
+      - ~/Documents/Dev/docker-code:/app
