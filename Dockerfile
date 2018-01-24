@@ -6,7 +6,7 @@ RUN rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.
 	rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
 
 RUN yum -y install httpd && \
-	yum -y install php70w php70w-fpm.x86_64
+	yum -y install php70w php70w-fpm.x86_64 php70w-mbstring php70w-xml
 
 RUN mkdir -p /app
 RUN chown -R apache:apache /app
