@@ -3,7 +3,7 @@ services:
   lumen:
     build: .
     container_name: 'lumencentos'
-    ports:
-     - "8000:80"
+    expose:
+     - "80"
     volumes:
       - ~/Documents/Dev/docker-code:/app
