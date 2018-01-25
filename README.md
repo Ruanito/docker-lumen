@@ -47,3 +47,14 @@ You can also choose to run it in background (detached mode):
 ```console
 $ docker-compose up -d
 ```
+
+Build the basic project
+
+```console
+$ docker exec -it lumencentos bash
+$ bash build_app.sh
+$ exit
+$ docker inspect lumencentos
+```
+
+Get the IP address result from docker inspect and access the brownser with these address
