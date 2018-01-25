@@ -57,4 +57,4 @@ $ exit
 $ docker inspect lumencentos
 ```
 
-Get the IP address result from docker inspect and access the brownser with these address
+Get the IP address result from docker inspect and access the browser with these address
